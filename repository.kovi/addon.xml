@@ -1,10 +1,9 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<addon id="repository.kovi" name="KOVI Repository" provider-name="KOVI" version="1.0">
+<addon id="repository.kovi" name="KOVI Repository" provider-name="[COLOR darkturquoise][B]KOVI[/B][/COLOR]" version="1.0">
 <extension point="xbmc.addon.repository" name="KOVI Repository">
 <dir>
-<info compressed="false">https://michaz1988.github.io/repo/addons.xml</info>
-<checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
-<datadir zip="true">https://michaz1988.github.io/repo/</datadir>
+<info compressed="false">https://droidiptv.github.io/repo/addons.xml</info>
+<checksum>https://droidiptv.github.io/repo/addons.xml.md5</checksum>
+<datadir zip="true">https://droidiptv.github.io/repo/</datadir>
 </dir>
 <dir minversion="17.9.910" maxversion="18.9.700">
 <info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/leia/addons.xml</info>
@@ -93,7 +92,7 @@ This XML file does not appear to have any style information associated with it. 
 <website>https://droidiptv.github.io</website>
 <summary>[COLOR darkturquoise]KOVI[/COLOR] [COLOR white]Repository[/COLOR]</summary>
 <description lang="de_DE">Matrix Repository</description>
-<description lang="en_GB">KOVI Matrix Repository</description>
+<description lang="en_GB">Matrix Repository</description>
 <assets>
 <icon>icon.png</icon>
 <fanart>icon.png</fanart>
