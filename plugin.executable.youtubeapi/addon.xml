@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.executable.youtubeapi"
+       name="YouTube API Konfigurator"
+       version="1.0"
+       provider-name="KOVI">
+  <requires>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">YouTube API Konfigurator</summary>
+ <description lang="de">[COLORwhite]You[COLORred]Tube[/COLOR] [COLORwhite]API Konfigurator ergänzt fehlende API-Schlüssel um das YouTube Add-on vollständig nutzen zu können.[/COLOR]</description>
+    <disclaimer lang="de">Die Entwickler übernehmen keinerlei Garantien. </disclaimer>
+    <platform>all</platform>
+	<assets>
+    <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
