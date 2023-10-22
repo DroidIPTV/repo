@@ -1,581 +1,164 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.program.browser.launcher" name="Browser Launcher" version="2.0.0" provider-name="KOVI">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en_GB">Browser Launcher</summary>
-        <language></language>
-        <description lang="en_GB">Launch websites via selected Browser in Kiosk-mode[CR][CR]*Modificado para poder lanzar [COLOR red]Chrome[/COLOR] en [COLOR blue]Android[/COLOR].[CR]*Modificado para poder lanzar [COLOR red]MozillaTV, JioPages y Hisense-OdinBrowser[/COLOR] en [COLOR blue]AndroidTV[/COLOR]. (Bad-Max)</description>
-        <description lang="de_DE">Öffnet Websiten mit dem ausgewählten Browser im Vollbildmodus[CR][CR]*Modificado para poder lanzar [COLOR red]Chrome[/COLOR] en [COLOR blue]Android[/COLOR].[CR]*Modificado para poder lanzar [COLOR red]MozillaTV, JioPages y Hisense-OdinBrowser[/COLOR] en [COLOR blue]AndroidTV[/COLOR]. (Bad-Max)</description>
-        <email>AddonScriptorDE at yahoo dot de</email>
-        <website></website>
-        <license>GPL-2.0-only</license>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
+    <addon id="repository.aliunde" name="[COLOR aqua]Aliunde Repository[/COLOR]" version="1.2.1" provider-name="Aliunde">
+        <extension point="xbmc.addon.repository" name="[COLOR aqua]Aliunde Repository[/COLOR]">
+		    <dir>
+                <info compressed="false">https://fuse99.com/_aliunde/addons.xml</info>
+                <checksum>https://fuse99.com/_aliunde/addons.xml.md5</checksum>
+                <datadir zip="true">https://fuse99.com/_aliunde/</datadir>
+				<hashes>false</hashes>
+			</dir>
+			<dir>
+			<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+		</dir>
 
-<addon id="plugin.video.mediathekviewweb" name="MediathekViewWeb" version="23.09.19" provider-name="KOVI">
-    <requires>
-        <!--<import addon="xbmc.python" version="2.25.0"/>-->
-        <import addon="script.module.future" version="0.17.1"/>
-        <import addon="script.module.six" version="1.13.0"/>
-        <import addon="script.module.requests" version="2.7.0"/>
-        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en_GB">A MediathekView client</summary>
-        <description lang="en_GB">MediathekViewWeb is a simple browser interface for accessing the movie list of the MediathekView project.</description>
-        <summary lang="de_DE">Ein MediathekView Client</summary>
-		<description lang="de_DE">MediathekViewWeb ist eine einfache Browser-Oberfläche für den Zugriff auf die Filmliste des MediathekView Projekts.</description>
-        <license>GPL 2.0</license>
-        <assets>
-            <icon>resources/media/icon.png</icon>
-            <fanart>resources/media/fanart.png</fanart>
-            <screenshot>resources/media/screenshots/screenshot-01.jpg</screenshot>
-            <screenshot>resources/media/screenshots/screenshot-02.jpg</screenshot>
-            <screenshot>resources/media/screenshots/screenshot-03.jpg</screenshot>
-        </assets>
-    </extension>
-</addon>
+		<dir>
+        <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
 
-<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.6" provider-name="KOVI,realvito">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
-		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
-		<import addon="inputstream.adaptive" version="2.4.5"/>
-		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
-		<import addon="service.cron.autobiblio" version="2.1.2+matrix.1" optional="true"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py"/>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Streamingdienst von RTL+ (DE)</summary>
-		<summary lang="en_GB">Streamingservice of RTL+ (DE)</summary>
-		<description lang="de_DE">Bei RTL+ (DE), vormals TVNOW (DE), Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTL+, sogar schon vor TV-Aussstrahlung !</description>
-		<description lang="en_GB">Stream series, shows and movies online with RTL+ (DE), formerly TVNOW (DE). Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]You can see a lot of content from the TV program on RTL+, even before it is broadcast on TV!</description>
-		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
-		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
-		<website>https://plus.rtl.de/</website>
-		<email></email>
-		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
-		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.rtlgroup.de</source>
-		<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
-		</assets>
-		<news>
-[B][COLOR orangered]Version 1.1.6+matrix.1  (07.09.2023)[/COLOR][/B]
-- fixed: VOD-STREAMS für Premium-User werden nur in SD-Qualität abgespielt
-- optimized: Serienname, Staffel/Folge und Sendetermin neu angeordnet und übersichtlicher gestaltet
-- added: Bibliothek = Thumb für Staffeln und Fanart für Episoden
-		</news>
-	</extension>
-</addon>
-
-<addon id="plugin.close.kill" name="Beenden (KILL)" version="1.0.0" provider-name="KOVI">
-    <requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-			</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary></summary>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart></fanart>
-        </assets>
-		<description></description>
-	</extension>
-</addon>
-
-<addon id="plugin.video.vavooto" name="VAVOO.TO" version="5.9.3.6" provider-name="KOVI,kasi,michaz">
-	<requires>
-		<import addon="script.module.vavoo"/>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.resolveurl"/>
-		<import addon="inputstream.ffmpegdirect" optional="true" />
-		<import addon="script.module.futures" optional="true" />
-		<!-- only for debug -->
-		<import addon="script.module.pydevd" optional="true"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="main.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="plugin.video.xship" version="2023.06.01" name="Xship" provider-name="KOVI">
-    <requires>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.vavoo"/>
-        <import addon="script.module.resolveurl" version="5.1.54"/>
-        <!-- for remote debug -->
-        <import addon="script.module.pydevd" optional="true"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <!--<extension point="xbmc.service" library="service.py" start="startup" />-->
-    <extension point="xbmc.addon.metadata">
-        <summary lang="de">xShip</summary>
-        <description lang="de">
-Mit diesem Addon kannst du auf alle angebotenen Streams verschiedenster deutscher Quellen zugreifen.
-Beachte, dass Addon kein offizieller Teil des verwendeten Media Players ist, und daher nicht von den offiziellen Support-Kanälen abgedeckt wird.
-Es handelt sich lediglich um eine Drittanbieter-Erweiterung, die dem System hinzugefügt wurde.
-        </description>
-        <disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern der Software weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
-        <license>GNU GPLv3</license>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart></fanart>
-            <screenshot></screenshot>
-            <!--<screenshot>resources/media/screenshots/screenshot-02.jpg</screenshot>
-            <screenshot>resources/media/screenshots/screenshot-03.jpg</screenshot>-->
-        </assets>
-        <news>
-Xship 2021.07.01
-- englsiche Anbieter entfernt
-- die hohe CPU Last in der Episodenliste beseitigt
-- fix bookmarks in player.py
-- update movie4k-click
-- update kinoger
-- Sourcecode cleaned
-- edit sourcesFilter
-- settings.xml
-- neue Fuktion, Hoster ausschließen
-- streamworld
-        </news>
-    </extension>
-</addon>
-
-<addon id="plugin.video.xstream" name="xStream" version="4.0.7" provider-name="KOVI">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.resolveurl" version="5.1.67"/>
-		<import addon="script.module.six" version="1.11.0"/>
-		<import addon="repository.xstream" optional="true"/>
-		<import addon="repository.resolveurl" optional="true"/>
-		<import addon="script.module.inputstreamhelper" version="0.3.3" optional="true"/>
-		<import addon="script.module.web-pdb" version="1.5.6" optional="true"/>
-		<import addon="script.module.pydevd" optional="true" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de">Schau über xStream!</summary>
-		<summary lang="en_GB">Watch over xStream!</summary>
-		<description lang="de">Mit diesem Addon kannst du auf angebotene Streams, verschiedener Quellen zugreifen.</description>
-		<description lang="en_GB">With this addon you can access streams offered by various sources.</description>
-		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
-		<disclaimer lang="en_GB">The content represented by this addon is not hosted or distributed by the creators of the addon, nor are the creators affiliated with the content providers in any way.</disclaimer>
-		<source>https://github.com/streamxstream/plugin.video.xstream</source>
-		<website>https://streamxstream.github.io/xStreamRepoWeb/</website>
-		<license>GNU GPLv3</license>
-		<platform>all</platform>
-		<news>xStream PY3 Kodi 19/20</news>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/art/screenshot.jpg</screenshot>
-		</assets>
-	</extension>
-</addon>
-
-  <addon
-  id="repository.arrownegra"
-  name="[COLOR red]Arrow[/COLOR] [COLOR black]Negra[/COLOR] [COLORcyan]Repository[/COLOR]"
-  version="2.05"
-  provider-name="Flecha Negra">
-  <requires>
-    <import addon="xbmc.addon" version="12.0.0"/>
-  </requires>
-  <extension point="xbmc.addon.repository" name="[COLOR red]Arrow Negra [COLOR red]Repositorio[/COLOR]">
-      <dir>
-      <info compressed="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/addons.xml</info>
-      <checksum>https://raw.github.com/arrownegra/arrownegra.github.io/master/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.github.com/arrownegra/arrownegra.github.io/master</datadir>
-      <hashes>false</hashes>
-  </dir>
-  <dir minversion="19.9.9">
-      <info compressed="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/nexus/addons.xml</info>
-      <checksum>https://raw.github.com/arrownegra/arrownegra.github.io/master/nexus/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/nexus</datadir>
-      <hashes>false</hashes>
-  </dir>
-  <dir minversion="19.0.0">
-      <info compressed="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/matrix/addons.xml</info>
-      <checksum>https://raw.github.com/arrownegra/arrownegra.github.io/master/matrix/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/matrix</datadir>
-      <hashes>false</hashes>
-  </dir>
-  <dir minversion="17.0.0" maxversion="18.9.0">
-      <info compressed="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/leia/addons.xml</info>
-      <checksum>https://raw.github.com/arrownegra/arrownegra.github.io/master/leia/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/leia</datadir>
-      <hashes>false</hashes>
-  </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>repositorio Arrow Negra</summary>
-    <description>repositorio oficial Arrow Negra - Proibido reproducao sem autorização prévia</description>
-    <disclaimer></disclaimer>
-    <platform>all</platform>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.4" provider-name="Kodinerds">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
-    </requires>
-    <extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
         <dir>
-            <info compressed="true">https://repo.kodinerds.net/addons/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
             <hashes>false</hashes>
         </dir>
-        <dir minversion="20.9.9" maxversion="21.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/omega/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
-            <hashes>false</hashes>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<dir>
+           <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml</info>
+		   <checksum>https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml.md5</checksum>
+           <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.glive/master/</datadir>
         </dir>
-        <dir minversion="20.0.0" maxversion="21.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/nexus/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/nexus/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/nexus/zip/</datadir>
-            <hashes>false</hashes>
+		<dir minversion="19.0">
+            <info compressed="false">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/</datadir>
         </dir>
-        <dir minversion="19.0.0" maxversion="21.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/matrix/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/matrix/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/matrix/zip/</datadir>
-            <hashes>false</hashes>
-        </dir>
-        <dir minversion="18.0.0" maxversion="18.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/leia/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/leia/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/leia/zip/</datadir>
-            <hashes>false</hashes>
-        </dir>
-        <dir minversion="17.0.0" maxversion="18.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/krypton/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/krypton/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/krypton/zip/</datadir>
-            <hashes>false</hashes>
-        </dir>
-        <dir minversion="16.0.0" maxversion="18.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/jarvis/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/jarvis/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/jarvis/zip/</datadir>
-            <hashes>false</hashes>
-        </dir>
-        <dir minversion="15.0.0" maxversion="18.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/isengard/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/isengard/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/isengard/zip/</datadir>
-            <hashes>false</hashes>
-        </dir>
-        <dir minversion="14.0.0" maxversion="18.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/helix/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/helix/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/helix/zip/</datadir>
-            <hashes>false</hashes>
-        </dir>
-        <dir minversion="13.0.0" maxversion="18.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/gotham/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/gotham/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/gotham/zip/</datadir>
-            <hashes>false</hashes>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Addon repository of the Kodinerds Community</summary>
-        <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
-        <summary lang="de">Addon Repository der Kodinerds Community</summary>
-        <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
-        <disclaimer/>
-        <platform>all</platform>
-        <assets>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
+            <description>This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels.The authors do not host any of the content in these addons and takes no responsibility for content found</description>
+            <platform>all</platform>
+            <genre>movies,usa</genre>
+			<assets>
             <icon>icon.png</icon>
             <fanart></fanart>
-        </assets>
-    </extension>
-</addon>
+            </assets>
+        </extension>
+    </addon>
 
-<addon id="repository.kus.allinone" name="[COLORdeepskyblue]K.U.S[/COLOR] AllInOne Repository" version="3.6" provider-name="[COLORdeepskyblue]K.U.S Team[/COLOR]">
-    <requires>
-        <import addon="xbmc.addon" version="12.0.0"/>
-    </requires>
-    <extension point="xbmc.addon.repository" name="[COLORdeepskyblue]K.U.S[/COLOR] AllInOne Repository">
-        <dir minversion="19.0.0">
-            <info compressed="true">https://kodi-unlimited-support.de/repo/data/addons.xml</info>
-            <checksum>https://kodi-unlimited-support.de/repo/data/addons.xml.md5</checksum>
-            <datadir zip="true">https://kodi-unlimited-support.de/repo/data</datadir>
-            <hashes>false</hashes>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">[COLORdeepskyblue]K.U.S[/COLOR] AllInOne Repository</summary>
-		<summary lang="de_DE">[COLORdeepskyblue]K.U.S[/COLOR] AllInOne Repository</summary>
-        <description lang="en_GB">Download and install addons from the KODI Unlimited Support repository.[CR][CR]Contact + support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Donation:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
-        <description lang="de_DE">Downloade und installiere Addons aus dem KODI Unlimited Support Repository.[CR][CR]Kontakt + Support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Spenden-Link:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
-        <disclaimer lang="en_GB">[B][COLORred]This is a third party repository and is unrelated to the official Kodi team.[/COLOR][/B]</disclaimer>
-		<disclaimer lang="de_DE">[B][COLORred]Dies ist ein Drittanbieter-Repository und steht nicht in Zusammenhang mit dem offiziellen Team Kodi.[/COLOR][/B]</disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart></fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="repository.marcelveldt" version="1.0.3" name="Marcelveldt's BETA repository" provider-name="marcelveldt, finkleandeinhorn">
+<addon id="repository.sandmann79.plugins" name="Sandmann79s Repository" version="2.0.0" provider-name="Sandmann79">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
-	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/</datadir>
-		</dir>
-		<dir minversion="18.9.700">
-			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/</datadir>
+	<extension point="xbmc.addon.repository" name="Sandmann79s Repository">
+		<dir minversion="18.9.9">
+			<info compressed="false">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/</datadir>
+			<hashes>false</hashes>
 		</dir>
 		<dir maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/</datadir>
+			<hashes>false</hashes>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
-		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+		<summary>Sandmann79s Repository</summary>
+		<description>Sandmann79s repository for Kodi add-ons</description>
 		<platform>all</platform>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart></fanart>
-		</assets>
 	</extension>
 </addon>
 
-<addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
-  <extension point="xbmc.addon.repository" name="ResolveURL Repository">
+<addon id="repository.gsource" name="[COLOR lime]G-Source Repository[/COLOR]" version="1.4.0" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="G-Source Repository">
     <dir>
-      <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml</info>       <checksum>https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/</datadir>
     </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <description lang="en_GB">ResolveURL and Link Tester</description>
-    <license></license>
-    <language></language>
-    <website></website>
-    <news></news>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="repository.slyguy" name="SlyGuy Repository (slyguy.uk)" provider-name="SlyGuy" version="0.0.8">
-  <extension point="xbmc.addon.repository" name="SlyGuy Repository (slyguy.uk)">
     <dir>
-      <info compressed="false">https://slyguy.uk/.repo/addons.xml</info>
-      <checksum>https://slyguy.uk/.repo/addons.xml.md5</checksum>
-      <datadir zip="true">https://slyguy.uk/.repo/</datadir>
+        <info compressed="false">https://github.com/mrgsi/repository.freeg/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.freeg/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.freeg/master/</datadir>
     </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.wnt2/master/</datadir>
+    </dir>
+    <dir>
+		<info>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml</info>
+		<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</datadir>
+		<artdir>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</artdir>
+	</dir>
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+    <dir>
+        <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
+        <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
+    </dir>
+    <dir minversion="18.9.0">
+        <info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info> <checksum>https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml.md5</checksum>
+	    <datadir zip="true">https://raw.github.com/jmooremcc/Repository.jmooremcc/master</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.alpha.yt/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.alpha.yt/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.alpha.yt/master/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>For Kodi 19 and above</summary>
+    <description>Find Repos and Add-ons for Kodi Matrix and Nexus.[CR]Contains the "Repo Source Installer" program add-on.</description>
     <platform>all</platform>
-    <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
-    <license></license>
-    <language></language>
-    <website></website>
-    <news></news>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="repository.thewarehouse"
-       name="The WareHouse Repository"
-       version="22.6.8"
-       provider-name="[COLORpurple]• [COLORorchid]Tech [COLORdarkorchid]E [COLORplum]Coyote [COLORpurple]•[/COLOR]">
-    <extension point="xbmc.addon.repository" name="The WareHouse Repository">
-        <dir minversion="18.9.0">
-            <info compressed="false">https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/matrix/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/matrix/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/matrix/zips/</datadir>
-        </dir>
-        <dir minversion="18.0" maxversion="18.9.0">
-            <info compressed="false">https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/leia/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/leia/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/leia/zips/</datadir>
-        </dir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
-		</dir>
-        <dir><!--ResolveUrl-->
-            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>The WareHouse Repository</summary>
-        <description>The WareHouse Repository</description>
-        <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
     </assets>
-    </extension>
+</extension>
 </addon>
 
-<addon id="script.autoruns" name="Autoruns" version="1.0.2" provider-name="fightnight, bittor7x0">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <source>https://github.com/bittor7x0/kodi.script.autoruns</source>
-        <summary lang="en">Disable startup services on Kodi</summary>
-        <summary lang="pt">Desactive serviços do arranque no Kodi</summary>
-        <summary lang="es">Desactive el inicio de servicios en Kodi</summary>
-        <description lang="en">You can disable startup services, improving Kodi internal speed.</description>
-        <description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
-        <description lang="es">Puede desactivar el inicio de servicios, mejorando la velocidad interna de Kodi.</description>
-        <disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
-        <disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
-        <disclaimer lang="es">Addon opensource no afiliado con el Equipo de Kodi.</disclaimer>
-        <license>GPL-3.0-or-later</license>
-        <assets>
-            <icon>resources/icon.png</icon>
-        </assets>
-        <news>[B]v1.0.2 (14 November 2022):[/B]
-- Update for Kodi v19 Matrix.
-
-[B]v1.0.1 (31 March 2015):[/B]
-- Little tweaks.
-- Submittion to Kodi official Kodi repository.
-- Cosmetic changes.
-
-[B]v1.0.0 (28 de Marco de 2015):[/B]
-- Limpeza de codigo.
-- Novo addon_id.
-- Outras correccoes.
-
-[B]v0.1.00 (13 de Novembro de 2014):[/B]
-- Melhorias de performance.
-- Adicionado logotipo do addon a cada pasta.
-- Outras correccoes.
-
-[B]v0.0.02 (21 de Dezembro de 2013):[/B]
-- Logotipo adicionado.
-
-[B]v0.0.01 (5 de Dezembro de 2013):[/B]
-- Release inicial.</news>
-    </extension>
-</addon>
-
-<addon id="plugin.executable.youtubeapi"
-       name="YouTube API Konfigurator"
-       version="1.0"
-       provider-name="KOVI">
-  <requires>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
+<addon id="repository.testmatrix" name="[B][COLOR coral]testmatrix[/COLOR][/B][COLOR azure] Repository[/COLOR]" provider-name="TVISIA" version="1.0.0">
+  <extension point="xbmc.addon.repository" name="testmatrix Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/TVISIA/repository.testmatrix/main/repo/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/TVISIA/repository.testmatrix/main/repo/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/TVISIA/repository.testmatrix/main/repo/zips/</datadir>
+    </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="de">YouTube API Konfigurator</summary>
- <description lang="de">[COLORwhite]You[COLORred]Tube[/COLOR] [COLORwhite]API Konfigurator ergänzt fehlende API-Schlüssel um das YouTube Add-on vollständig nutzen zu können.[/COLOR]</description>
-    <disclaimer lang="de">Die Entwickler übernehmen keinerlei Garantien. </disclaimer>
     <platform>all</platform>
-	<assets>
-    <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="script.setup" name="KOVI Setup" version="1.0.0" provider-name="KOVI">
-  <requires>
-    <import addon="script.module.requests" version="1.0.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-     <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-	<summary>KOVI Matrix Setup</summary>
-	<description>Setup Tool </description>
-    <language>de</language>
-    <platform>all</platform>
-    <license>The MIT License</license>
-    <forum>-</forum>
-    <source>https://github.com</source>
+    <description lang="en">[B][COLOR coral]testmatrix[/COLOR][/B][COLOR azure] Repository[/COLOR]"</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
     <assets>
-	    <icon>icon.png</icon>
-	    <fanart>fanart.jpg</fanart>
+      <icon>icon.png</icon>
     </assets>
   </extension>
 </addon>
 
-<addon id="repository.kovi" name="KOVI Repository" provider-name="KOVI" version="1.0">
-	<extension point="xbmc.addon.repository" name="KOVI Repository">
+<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="4.3">
+	<extension point="xbmc.addon.repository" name="Michaz Repository">
 		<dir>
-			<info compressed="false">https://droidiptv.github.io/repo/addons.xml</info>
-			<checksum>https://droidiptv.github.io/repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://droidiptv.github.io/repo/</datadir>
+			<info compressed="false">https://michaz1988.github.io/repo/addons.xml</info>
+			<checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://michaz1988.github.io/repo/</datadir>
 		</dir>
 		<dir minversion="17.9.910" maxversion="18.9.700">
 			<info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/leia/addons.xml</info>
@@ -661,8 +244,8 @@ Xship 2021.07.01
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<description lang="en">Addons by KOVI</description>
-		<website>https://droidiptv.github.io</website>
+		<description lang="en">Addons by Michaz</description>
+		<website>https://michaz1988.github.io</website>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
@@ -769,12 +352,97 @@ Xship 2021.07.01
 	</extension>
 </addon>
 
-<addon id="repository.michaz" name="Michaz Repository" provider-name="Michaz" version="4.3">
-	<extension point="xbmc.addon.repository" name="Michaz Repository">
+<addon id="script.setup" name="KOVI Setup" version="1.0.0" provider-name="KOVI">
+  <requires>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<summary>KOVI Matrix Setup</summary>
+	<description>Setup Tool </description>
+    <language>de</language>
+    <platform>all</platform>
+    <license>The MIT License</license>
+    <forum>-</forum>
+    <source>https://github.com</source>
+    <assets>
+	    <icon>icon.png</icon>
+	    <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.executable.youtubeapi"
+       name="YouTube API Konfigurator"
+       version="1.0"
+       provider-name="KOVI">
+  <requires>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">YouTube API Konfigurator</summary>
+ <description lang="de">[COLORwhite]You[COLORred]Tube[/COLOR] [COLORwhite]API Konfigurator ergänzt fehlende API-Schlüssel um das YouTube Add-on vollständig nutzen zu können.[/COLOR]</description>
+    <disclaimer lang="de">Die Entwickler übernehmen keinerlei Garantien. </disclaimer>
+    <platform>all</platform>
+	<assets>
+    <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.close.kill" name="Beenden (KILL)" version="1.0.0" provider-name="KOVI">
+    <requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+			</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary></summary>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+        </assets>
+		<description></description>
+	</extension>
+</addon>
+
+<addon id="plugin.program.browser.launcher" name="Browser Launcher" version="2.0.0" provider-name="KOVI">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Browser Launcher</summary>
+        <language></language>
+        <description lang="en_GB">Launch websites via selected Browser in Kiosk-mode[CR][CR]*Modificado para poder lanzar [COLOR red]Chrome[/COLOR] en [COLOR blue]Android[/COLOR].[CR]*Modificado para poder lanzar [COLOR red]MozillaTV, JioPages y Hisense-OdinBrowser[/COLOR] en [COLOR blue]AndroidTV[/COLOR]. (Bad-Max)</description>
+        <description lang="de_DE">Öffnet Websiten mit dem ausgewählten Browser im Vollbildmodus[CR][CR]*Modificado para poder lanzar [COLOR red]Chrome[/COLOR] en [COLOR blue]Android[/COLOR].[CR]*Modificado para poder lanzar [COLOR red]MozillaTV, JioPages y Hisense-OdinBrowser[/COLOR] en [COLOR blue]AndroidTV[/COLOR]. (Bad-Max)</description>
+        <email>AddonScriptorDE at yahoo dot de</email>
+        <website></website>
+        <license>GPL-2.0-only</license>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.kovi" name="KOVI Repository" provider-name="KOVI" version="1.0">
+	<extension point="xbmc.addon.repository" name="KOVI Repository">
 		<dir>
-			<info compressed="false">https://michaz1988.github.io/repo/addons.xml</info>
-			<checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://michaz1988.github.io/repo/</datadir>
+			<info compressed="false">https://droidiptv.github.io/repo/addons.xml</info>
+			<checksum>https://droidiptv.github.io/repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://droidiptv.github.io/repo/</datadir>
 		</dir>
 		<dir minversion="17.9.910" maxversion="18.9.700">
 			<info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/leia/addons.xml</info>
@@ -860,164 +528,533 @@ Xship 2021.07.01
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<description lang="en">Addons by Michaz</description>
-		<website>https://michaz1988.github.io</website>
+		<description lang="en">Addons by KOVI</description>
+		<website>https://droidiptv.github.io</website>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
 	</extension>
 </addon>
 
-<addon id="repository.testmatrix" name="[B][COLOR coral]testmatrix[/COLOR][/B][COLOR azure] Repository[/COLOR]" provider-name="TVISIA" version="1.0.0">
-  <extension point="xbmc.addon.repository" name="testmatrix Repository">
+<addon id="script.autoruns" name="Autoruns" version="1.0.2" provider-name="fightnight, bittor7x0">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <source>https://github.com/bittor7x0/kodi.script.autoruns</source>
+        <summary lang="en">Disable startup services on Kodi</summary>
+        <summary lang="pt">Desactive serviços do arranque no Kodi</summary>
+        <summary lang="es">Desactive el inicio de servicios en Kodi</summary>
+        <description lang="en">You can disable startup services, improving Kodi internal speed.</description>
+        <description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
+        <description lang="es">Puede desactivar el inicio de servicios, mejorando la velocidad interna de Kodi.</description>
+        <disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
+        <disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
+        <disclaimer lang="es">Addon opensource no afiliado con el Equipo de Kodi.</disclaimer>
+        <license>GPL-3.0-or-later</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+        <news>[B]v1.0.2 (14 November 2022):[/B]
+- Update for Kodi v19 Matrix.
+
+[B]v1.0.1 (31 March 2015):[/B]
+- Little tweaks.
+- Submittion to Kodi official Kodi repository.
+- Cosmetic changes.
+
+[B]v1.0.0 (28 de Marco de 2015):[/B]
+- Limpeza de codigo.
+- Novo addon_id.
+- Outras correccoes.
+
+[B]v0.1.00 (13 de Novembro de 2014):[/B]
+- Melhorias de performance.
+- Adicionado logotipo do addon a cada pasta.
+- Outras correccoes.
+
+[B]v0.0.02 (21 de Dezembro de 2013):[/B]
+- Logotipo adicionado.
+
+[B]v0.0.01 (5 de Dezembro de 2013):[/B]
+- Release inicial.</news>
+    </extension>
+</addon>
+
+<addon id="repository.thewarehouse"
+       name="The WareHouse Repository"
+       version="22.6.8"
+       provider-name="[COLORpurple]• [COLORorchid]Tech [COLORdarkorchid]E [COLORplum]Coyote [COLORpurple]•[/COLOR]">
+    <extension point="xbmc.addon.repository" name="The WareHouse Repository">
+        <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/matrix/zips/</datadir>
+        </dir>
+        <dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/warehousecrates/TheWareHouse/main/leia/zips/</datadir>
+        </dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
+		</dir>
+        <dir><!--ResolveUrl-->
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>The WareHouse Repository</summary>
+        <description>The WareHouse Repository</description>
+        <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    </extension>
+</addon>
+
+<addon id="repository.slyguy" name="SlyGuy Repository (slyguy.uk)" provider-name="SlyGuy" version="0.0.8">
+  <extension point="xbmc.addon.repository" name="SlyGuy Repository (slyguy.uk)">
     <dir>
-      <info compressed="false">https://raw.githubusercontent.com/TVISIA/repository.testmatrix/main/repo/zips/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/TVISIA/repository.testmatrix/main/repo/zips/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/TVISIA/repository.testmatrix/main/repo/zips/</datadir>
+      <info compressed="false">https://slyguy.uk/.repo/addons.xml</info>
+      <checksum>https://slyguy.uk/.repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://slyguy.uk/.repo/</datadir>
     </dir>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <description lang="en">[B][COLOR coral]testmatrix[/COLOR][/B][COLOR azure] Repository[/COLOR]"</description>
+    <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
     <license></license>
     <language></language>
     <website></website>
     <news></news>
     <assets>
       <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
 </addon>
 
-<addon id="repository.gsource" name="[COLOR lime]G-Source Repository[/COLOR]" version="1.4.0" provider-name="G-Man">
-<extension point="xbmc.addon.repository" name="G-Source Repository">
+<addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
+  <extension point="xbmc.addon.repository" name="ResolveURL Repository">
     <dir>
-        <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml</info>       <checksum>https://raw.githubusercontent.com/mrgsi/repository.gsource/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.gsource/master/</datadir>
+      <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
     </dir>
-    <dir>
-        <info compressed="false">https://github.com/mrgsi/repository.freeg/raw/master/addons.xml</info>
-        <checksum>https://github.com/mrgsi/repository.freeg/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.freeg/master/</datadir>
-    </dir>
-    <dir>
-        <info compressed="false">https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml</info>
-        <checksum>https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.wnt2/master/</datadir>
-    </dir>
-    <dir>
-		<info>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml</info>
-		<checksum>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</datadir>
-		<artdir>https://raw.github.com/pkscout/repository.skins.pkscout/nexus/download</artdir>
-	</dir>
-    <dir>
-		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-    </dir>
-    <dir>
-        <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
-        <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
-    </dir>
-    <dir minversion="18.9.0">
-        <info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info> <checksum>https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml.md5</checksum>
-	    <datadir zip="true">https://raw.github.com/jmooremcc/Repository.jmooremcc/master</datadir>
-    </dir>
-    <dir>
-        <info compressed="false">https://github.com/mrgsi/repository.alpha.yt/raw/master/addons.xml</info>
-        <checksum>https://github.com/mrgsi/repository.alpha.yt/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.alpha.yt/master/</datadir>
-    </dir>
-</extension>
-<extension point="xbmc.addon.metadata">
-	<summary>For Kodi 19 and above</summary>
-    <description>Find Repos and Add-ons for Kodi Matrix and Nexus.[CR]Contains the "Repo Source Installer" program add-on.</description>
+  </extension>
+  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+    <description lang="en_GB">ResolveURL and Link Tester</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
     <assets>
-        <icon>icon.png</icon>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
     </assets>
-</extension>
+  </extension>
 </addon>
 
-<addon id="repository.sandmann79.plugins" name="Sandmann79s Repository" version="2.0.0" provider-name="Sandmann79">
+<addon id="repository.marcelveldt" version="1.0.3" name="Marcelveldt's BETA repository" provider-name="marcelveldt, finkleandeinhorn">
 	<requires>
 		<import addon="xbmc.addon" version="12.0.0"/>
 	</requires>
-	<extension point="xbmc.addon.repository" name="Sandmann79s Repository">
-		<dir minversion="18.9.9">
-			<info compressed="false">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages-py3/</datadir>
-			<hashes>false</hashes>
+	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/repository/</datadir>
+		</dir>
+		<dir minversion="18.9.700">
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/matrix/</datadir>
 		</dir>
 		<dir maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/Sandmann79/xbmc/master/packages/</datadir>
-			<hashes>false</hashes>
+			<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/olderversions/</datadir>
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Sandmann79s Repository</summary>
-		<description>Sandmann79s repository for Kodi add-ons</description>
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
 		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart></fanart>
+		</assets>
 	</extension>
 </addon>
 
-    <addon id="repository.aliunde" name="[COLOR aqua]Aliunde Repository[/COLOR]" version="1.2.1" provider-name="Aliunde">
-        <extension point="xbmc.addon.repository" name="[COLOR aqua]Aliunde Repository[/COLOR]">
-		    <dir>
-                <info compressed="false">https://fuse99.com/_aliunde/addons.xml</info>
-                <checksum>https://fuse99.com/_aliunde/addons.xml.md5</checksum>
-                <datadir zip="true">https://fuse99.com/_aliunde/</datadir>
-				<hashes>false</hashes>
-			</dir>
-			<dir>
-			<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
-		</dir>
-
-		<dir>
-        <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-        </dir>
-
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
+<addon id="repository.kus.allinone" name="[COLORdeepskyblue]K.U.S[/COLOR] AllInOne Repository" version="3.6" provider-name="[COLORdeepskyblue]K.U.S Team[/COLOR]">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="[COLORdeepskyblue]K.U.S[/COLOR] AllInOne Repository">
+        <dir minversion="19.0.0">
+            <info compressed="true">https://kodi-unlimited-support.de/repo/data/addons.xml</info>
+            <checksum>https://kodi-unlimited-support.de/repo/data/addons.xml.md5</checksum>
+            <datadir zip="true">https://kodi-unlimited-support.de/repo/data</datadir>
             <hashes>false</hashes>
         </dir>
-
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
-		</dir>
-		<dir>
-           <info compressed="false">https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml</info>
-		   <checksum>https://raw.githubusercontent.com/mrgsi/repository.glive/master/addons.xml.md5</checksum>
-           <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.glive/master/</datadir>
-        </dir>
-		<dir minversion="19.0">
-            <info compressed="false">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/CocoJoe2411/repository.cocoscrapers/master/zips/</datadir>
-        </dir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
-            <description>This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels.The authors do not host any of the content in these addons and takes no responsibility for content found</description>
-            <platform>all</platform>
-            <genre>movies,usa</genre>
-			<assets>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">[COLORdeepskyblue]K.U.S[/COLOR] AllInOne Repository</summary>
+		<summary lang="de_DE">[COLORdeepskyblue]K.U.S[/COLOR] AllInOne Repository</summary>
+        <description lang="en_GB">Download and install addons from the KODI Unlimited Support repository.[CR][CR]Contact + support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Donation:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
+        <description lang="de_DE">Downloade und installiere Addons aus dem KODI Unlimited Support Repository.[CR][CR]Kontakt + Support:[CR][COLORdeepskyblue]https://www.facebook.com/groups/kodiunlimited[/COLOR][CR]Spenden-Link:[CR][COLORdeepskyblue]https://www.paypal.me/KodiUnlimited[/COLOR]</description>
+        <disclaimer lang="en_GB">[B][COLORred]This is a third party repository and is unrelated to the official Kodi team.[/COLOR][/B]</disclaimer>
+		<disclaimer lang="de_DE">[B][COLORred]Dies ist ein Drittanbieter-Repository und steht nicht in Zusammenhang mit dem offiziellen Team Kodi.[/COLOR][/B]</disclaimer>
+        <platform>all</platform>
+        <assets>
             <icon>icon.png</icon>
             <fanart></fanart>
-            </assets>
-        </extension>
-    </addon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.4" provider-name="Kodinerds">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
+        <dir>
+            <info compressed="true">https://repo.kodinerds.net/addons/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="20.9.9" maxversion="21.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/omega/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="20.0.0" maxversion="21.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/nexus/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/nexus/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/nexus/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="19.0.0" maxversion="21.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/matrix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/matrix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="18.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/leia/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/leia/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="17.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/krypton/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/krypton/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="16.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/jarvis/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/jarvis/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/jarvis/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="15.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/isengard/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/isengard/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/isengard/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="14.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/helix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/helix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/helix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="13.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/gotham/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/gotham/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/gotham/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Addon repository of the Kodinerds Community</summary>
+        <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
+        <summary lang="de">Addon Repository der Kodinerds Community</summary>
+        <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
+        <disclaimer/>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+        </assets>
+    </extension>
+</addon>
+
+  <addon
+  id="repository.arrownegra"
+  name="[COLOR red]Arrow[/COLOR] [COLOR black]Negra[/COLOR] [COLORcyan]Repository[/COLOR]"
+  version="2.05"
+  provider-name="Flecha Negra">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="[COLOR red]Arrow Negra [COLOR red]Repositorio[/COLOR]">
+      <dir>
+      <info compressed="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/addons.xml</info>
+      <checksum>https://raw.github.com/arrownegra/arrownegra.github.io/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/arrownegra/arrownegra.github.io/master</datadir>
+      <hashes>false</hashes>
+  </dir>
+  <dir minversion="19.9.9">
+      <info compressed="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/nexus/addons.xml</info>
+      <checksum>https://raw.github.com/arrownegra/arrownegra.github.io/master/nexus/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/nexus</datadir>
+      <hashes>false</hashes>
+  </dir>
+  <dir minversion="19.0.0">
+      <info compressed="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/matrix/addons.xml</info>
+      <checksum>https://raw.github.com/arrownegra/arrownegra.github.io/master/matrix/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/matrix</datadir>
+      <hashes>false</hashes>
+  </dir>
+  <dir minversion="17.0.0" maxversion="18.9.0">
+      <info compressed="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/leia/addons.xml</info>
+      <checksum>https://raw.github.com/arrownegra/arrownegra.github.io/master/leia/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/arrownegra/arrownegra.github.io/master/leia</datadir>
+      <hashes>false</hashes>
+  </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>repositorio Arrow Negra</summary>
+    <description>repositorio oficial Arrow Negra - Proibido reproducao sem autorização prévia</description>
+    <disclaimer></disclaimer>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.xstream" name="xStream" version="4.0.7" provider-name="KOVI">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.resolveurl" version="5.1.67"/>
+		<import addon="script.module.six" version="1.11.0"/>
+		<import addon="repository.xstream" optional="true"/>
+		<import addon="repository.resolveurl" optional="true"/>
+		<import addon="script.module.inputstreamhelper" version="0.3.3" optional="true"/>
+		<import addon="script.module.web-pdb" version="1.5.6" optional="true"/>
+		<import addon="script.module.pydevd" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">Schau über xStream!</summary>
+		<summary lang="en_GB">Watch over xStream!</summary>
+		<description lang="de">Mit diesem Addon kannst du auf angebotene Streams, verschiedener Quellen zugreifen.</description>
+		<description lang="en_GB">With this addon you can access streams offered by various sources.</description>
+		<disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+		<disclaimer lang="en_GB">The content represented by this addon is not hosted or distributed by the creators of the addon, nor are the creators affiliated with the content providers in any way.</disclaimer>
+		<source>https://github.com/streamxstream/plugin.video.xstream</source>
+		<website>https://streamxstream.github.io/xStreamRepoWeb/</website>
+		<license>GNU GPLv3</license>
+		<platform>all</platform>
+		<news>xStream PY3 Kodi 19/20</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/art/screenshot.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.xship" version="2023.06.01" name="Xship" provider-name="KOVI">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.vavoo"/>
+        <import addon="script.module.resolveurl" version="5.1.54"/>
+        <!-- for remote debug -->
+        <import addon="script.module.pydevd" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <!--<extension point="xbmc.service" library="service.py" start="startup" />-->
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">xShip</summary>
+        <description lang="de">
+Mit diesem Addon kannst du auf alle angebotenen Streams verschiedenster deutscher Quellen zugreifen.
+Beachte, dass Addon kein offizieller Teil des verwendeten Media Players ist, und daher nicht von den offiziellen Support-Kanälen abgedeckt wird.
+Es handelt sich lediglich um eine Drittanbieter-Erweiterung, die dem System hinzugefügt wurde.
+        </description>
+        <disclaimer lang="de">Die von diesem Addon dargestellten Inhalte werden von den Erstellern der Software weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Content-Anbietern.</disclaimer>
+        <license>GNU GPLv3</license>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+            <screenshot></screenshot>
+            <!--<screenshot>resources/media/screenshots/screenshot-02.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot-03.jpg</screenshot>-->
+        </assets>
+        <news>
+Xship 2021.07.01
+- englsiche Anbieter entfernt
+- die hohe CPU Last in der Episodenliste beseitigt
+- fix bookmarks in player.py
+- update movie4k-click
+- update kinoger
+- Sourcecode cleaned
+- edit sourcesFilter
+- settings.xml
+- neue Fuktion, Hoster ausschließen
+- streamworld
+        </news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.vavooto" name="VAVOO.TO" version="5.9.3.6" provider-name="KOVI,kasi,michaz">
+	<requires>
+		<import addon="script.module.vavoo"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="inputstream.ffmpegdirect" optional="true" />
+		<import addon="script.module.futures" optional="true" />
+		<!-- only for debug -->
+		<import addon="script.module.pydevd" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.themoviedb.helper"
+version="5.0.55"
+name="TheMovieDb Helper"
+provider-name="KOVI">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  <import addon="script.module.requests" version="2.9.1"/>
+  <import addon="script.module.pil" version="1.1.7"/>
+  <import addon="script.module.addon.signals" version="0.0.6" />
+  <import addon="script.module.tmdbhelper" version="0.0.7" />
+  <import addon="script.module.beautifulsoup4" version="4.9.3" />
+  <import addon="plugin.video.xstream" version="4.0.7"/>
+<import addon="plugin.video.xship" version="2023.06.01"/>
+<import addon="plugin.video.rtlgroup.de" version="1.1.6"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="plugin.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.python.script" library="script.py" />
+<extension point="xbmc.service" library="service.py" />
+<extension point="xbmc.addon.metadata">
+  <reuselanguageinvoker>false</reuselanguageinvoker>
+  <summary lang="en_GB">TheMovieDb Helper</summary>
+  <description lang="en_GB">TheMovieDb Helper provides details about movies, tvshows and actors from TMDb. Users can access a variety of lists from TMDb TVDb MDbList and Trakt.</description>
+  <disclaimer lang="en_GB">Data provided by TheMovieDb TVDb MDbList OMDb FanartTV and Trakt. Some of the information is provided by TheTVDB.com. Please consider supporting them. https://thetvdb.com/subscribe</disclaimer>
+  <license>GPL-3.0-or-later</license>
+  <website>https://github.com/jurialmunkey/plugin.video.themoviedb.helper</website>
+  <forum></forum>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot></screenshot>
+    <screenshot></screenshot>
+  </assets>
+</extension>
+</addon>
+
+<addon id="plugin.video.rtlgroup.de" name="RTLPLUS - V.3" version="1.1.6" provider-name="KOVI,realvito">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+		<import addon="script.common.plugin.cache" version="2.6.2+matrix.1"/>
+		<import addon="inputstream.adaptive" version="2.4.5"/>
+		<import addon="script.module.inputstreamhelper" version="0.5.5+matrix.1"/>
+		<import addon="service.cron.autobiblio" version="2.1.2+matrix.1" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Streamingdienst von RTL+ (DE)</summary>
+		<summary lang="en_GB">Streamingservice of RTL+ (DE)</summary>
+		<description lang="de_DE">Bei RTL+ (DE), vormals TVNOW (DE), Serien, Shows und Filme online streamen. Schau dir komplette Serien an, fiebere bei deinen liebsten Daily-Soaps mit oder staune bei spannenden Dokumentationen - alles wann und wo du willst auf Abruf.[CR]Viele Inhalte aus dem TV Programm siehst du bei RTL+, sogar schon vor TV-Aussstrahlung !</description>
+		<description lang="en_GB">Stream series, shows and movies online with RTL+ (DE), formerly TVNOW (DE). Watch complete series, enjoy your favorite daily soap operas or marvel at exciting documentaries - all when and where you want on demand.[CR]You can see a lot of content from the TV program on RTL+, even before it is broadcast on TV!</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website>https://plus.rtl.de/</website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.rtlgroup.de</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 1.1.6+matrix.1  (07.09.2023)[/COLOR][/B]
+- fixed: VOD-STREAMS für Premium-User werden nur in SD-Qualität abgespielt
+- optimized: Serienname, Staffel/Folge und Sendetermin neu angeordnet und übersichtlicher gestaltet
+- added: Bibliothek = Thumb für Staffeln und Fanart für Episoden
+		</news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.mediathekviewweb" name="MediathekViewWeb" version="23.09.19" provider-name="KOVI">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.25.0"/>-->
+        <import addon="script.module.future" version="0.17.1"/>
+        <import addon="script.module.six" version="1.13.0"/>
+        <import addon="script.module.requests" version="2.7.0"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">A MediathekView client</summary>
+        <description lang="en_GB">MediathekViewWeb is a simple browser interface for accessing the movie list of the MediathekView project.</description>
+        <summary lang="de_DE">Ein MediathekView Client</summary>
+		<description lang="de_DE">MediathekViewWeb ist eine einfache Browser-Oberfläche für den Zugriff auf die Filmliste des MediathekView Projekts.</description>
+        <license>GPL 2.0</license>
+        <assets>
+            <icon>resources/media/icon.png</icon>
+            <fanart>resources/media/fanart.png</fanart>
+            <screenshot>resources/media/screenshots/screenshot-01.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot-02.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot-03.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
 </addons>
