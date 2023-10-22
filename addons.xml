@@ -444,6 +444,11 @@
 			<checksum>https://droidiptv.github.io/repo/addons.xml.md5</checksum>
 			<datadir zip="true">https://droidiptv.github.io/repo/</datadir>
 		</dir>
+<dir>
+			<info compressed="false">https://michaz1988.github.io/repo/addons.xml</info>
+			<checksum>https://michaz1988.github.io/repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://michaz1988.github.io/repo/</datadir>
+		</dir>
 		<dir minversion="17.9.910" maxversion="18.9.700">
 			<info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/leia/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/streamxstream/xStreamRepo/master/leia/addons.xml.md5</checksum>
@@ -528,8 +533,8 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<description lang="en">Addons by KOVI</description>
-		<website>https://droidiptv.github.io</website>
+		<description lang="en">Addons by Michaz</description>
+		<website>https://michaz1988.github.io</website>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
@@ -887,7 +892,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.xship" version="2023.06.01" name="Xship" provider-name="KOVI">
+<addon id="plugin.video.xship" version="2023.06.01" name="Xship" provider-name="KOVI,michaz">
     <requires>
         <import addon="script.module.requests"/>
         <import addon="script.module.vavoo"/>
@@ -932,7 +937,7 @@ Xship 2021.07.01
     </extension>
 </addon>
 
-<addon id="plugin.video.vavooto" name="VAVOO.TO" version="5.9.3.6" provider-name="KOVI,kasi,michaz">
+<addon id="plugin.video.vavooto" name="VAVOO.TO" version="5.9.3.6" provider-name="michaz,KOVI,kasi">
 	<requires>
 		<import addon="script.module.vavoo"/>
 		<import addon="script.module.requests"/>
@@ -1102,6 +1107,399 @@ provider-name="KOVI">
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
+    </extension>
+</addon>
+
+<addon id="plugin.feed.reader" name="RSS Feed Reader" version="1.0.0" provider-name="KOVI">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.12.4" />
+    <import addon="script.module.dateutil" />
+    <import addon="script.module.beautifulsoup4" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de">RSS Feed Reader</summary>
+    <description lang="de">RSS Feed Reader</description>
+    <disclaimer lang="de"></disclaimer>
+    <language>de</language>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.2" provider-name="KOVI,dEXE, THE CREW, mbebe">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.inputstreamhelper"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">DaddyLiveHD - Live TV and Sports</summary>
+        <description lang="en">Live Streamed Channels and Scheduled Sporting Events.[CR][CR]Multiple sources/streams works in Matrix, Nexus and Omega.</description>
+        <disclaimer lang="en">daddylivehd.com</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.3.3" provider-name="KOVI,jmooremcc, spoyser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image executable</provides>
+  </extension>
+
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <summary lang="es_ES">Ponga todas sus partes favoritas de todos sus complementos favoritos en un complemento fácil de usar.</summary>
+    <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <description lang="es_ES">Super Favoritos es la mejor forma de administrar sus favoritos de Kodi.[CR][CR]Prácticamente cualquier elemento de menú dentro de Kodi se puede agregar a Súper favoritos, incluso desde complementos que normalmente no brindan esta función.[CR][CR]Super Favoritos le permite administrar mejor sus favoritos de Kodi, incluída la creación de subcarpetas, en las que puede copiar o mover sus secciones o addons preferidos.[CR][CR]Esto le permite crear su propio complemento personalizado con lo mejor. Busque sus addons preferidos, reproduzca su música favorita, lea sus historias favoritas, seleccione sus listas de reproducción, explore sus películas, escuche sus estaciones de radio, vea sus dibujos animados, las posibilidades son infinitas, todos sus favoritos desde un solo uso addon, fácil de añadir.</description>
+    <platform>all</platform>
+    <language>en es</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website />
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+    <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+
+    <news>
+
+2.3.2 July 2023
+    -Removed metahandler from addon.xml
+    -Added new imagecache module to implement the ability to import/export custom icons.
+    -Miscellaneous bug fixes
+    -Bug fixes in imagecache module
+    -Bug fix in importer module
+
+2.2.6 April 2022
+      - Fix context menu settings bug
+      - Fix more issues with activateWindowCommand
+
+2.2.5 February 2022
+      - Generic Fix for activateWindowCommand
+
+2.2.4 February 2022
+      - Fix URL Playback
+
+2.2.3 February 2022
+      - Fix folder lock
+      - Fix name colorization
+
+2.2.1 February 2022
+      - Minor Bug Fix
+
+2.2.0 December 2021
+      - Fixed Play From Here functionality
+      - Fixed handling of local folders so that back button now works correctly
+      - Added threading decorator to utils
+
+2.1.0: 9 October 2021
+      - Added Spanish Translation contributed by populc
+      - Fixed issue in player module
+
+2.0.11: 26 August 2021
+      - Fixed bug in download module that prevented videos from being downloaded
+
+2.0.10: 6 June 2021
+      - Fixed bug that prevented Hebrew language for working
+
+2.0.9: 15 May 2021
+      - Fixed bug in Player.def activateWindowCommand(cmd) that was messing up the ability
+        to return from child direrctories
+
+2.0.8: 14 May 2021
+      - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
+        that caused crashes.
+
+2.0.7: 17 February 2021
+    - Fixed remote folder access via another plugin
+
+2.0.6: 11 January 2021
+      - Fixed access to local folders and smb folders
+
+2.0.5: 12 December 2020
+      - More Fixes for Network Folder Failure to Launch
+
+2.0.0: 29 November 2020
+      - Matrix Version
+
+1.0.60: 1 November 2020
+    - Fixed launch issues in Kodi Leia
+
+1.0.59: 29th May 2017
+    - 'Now playing' text now defined by SF due to skin variations
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED),True) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>
+
+<addon id="script.module.xstream" name="xStream Scraper" provider-name="michaz1988" version="0.1.2.6">
+	<requires>
+		<import addon="script.module.vavoo"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+        <import addon="script.module.resolveurl"/>
+        <import addon="plugin.video.xstream"/>
+        <!-- for remote debug -->
+        <import addon="script.module.pydevd" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>icon.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.vavoo" name="Vavoosign" version="0.1.3.1" provider-name="michaz1988">
+	<requires>
+		<import addon="script.module.requests"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.joyn" name="Joyn" version="2.5.22+matrix.1" provider-name="knaerzche, Maven">
+	<requires>
+		<import addon="inputstream.adaptive" version="2.5.0"/>
+		<import addon="script.module.inputstreamhelper" version="0.4.4"/>
+		<import addon="script.module.pydes" version="2.0.1" optional="true"/>
+		<import addon="script.module.simplejson" version="3.3.0" optional="true"/>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>true</reuselanguageinvoker>
+		<summary lang="en_GB">Joyn Video On Demand  and Live TV</summary>
+		<summary lang="de_DE">Joyn Video On Demand and Live TV</summary>
+		<description lang="en_GB">Watch VOD content und Live TV provided by Joyn</description>
+		<description lang="de_DE">Video On Demand und Live TV von Joyn</description>
+		<disclaimer lang="en_GB">The use of this addon may violate the terms and conditions of Joyn GmbH - especially, but not exclusively, if it is used outside of Germany.</disclaimer>
+		<disclaimer lang="de_DE">Die Nutzung dieses Addon verstösst eventuell gegen die AGB der Joyn GmbH - insbesondere, aber nicht ausschliesslich, wenn es außerhalb von Deutschland verwendet wird</disclaimer>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+		<forum>https://www.kodinerds.net/index.php/Thread/66679-Pre-Release-Joyn-VOD-Live/?postID=537817</forum>
+		<website>https://www.joyn.de/</website>
+		<source>https://github.com/Maven85/plugin.video.joyn</source>
+		<assets>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+			<clearlogo>resources/media/logo.gif</clearlogo>
+			<screenshot>resources/media/screenshot01.jpg</screenshot>
+			<screenshot>resources/media/screenshot02.jpg</screenshot>
+			<screenshot>resources/media/screenshot03.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.26" provider-name="KOVI,anxdpanic, bromix">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.six" version="1.11.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/startup.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.addon.metadata">
+        <news>
+[fix] playback
+[upd] Translations updated from Kodi Weblate
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <platform>all</platform>
+        <license>GPL-2.0-only</license>
+        <forum>https://ytaddon.panicked.xyz/forum</forum>
+        <website>https://www.youtube.com</website>
+        <source>https://github.com/anxdpanic/plugin.video.youtube</source>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="bg_BG">Добавка за YouTube</summary>
+        <summary lang="cs_CZ">Plugin pro YouTube</summary>
+        <summary lang="da_DK">Plugin til YouTube</summary>
+        <summary lang="de_DE">Plugin für YouTube</summary>
+        <summary lang="el_GR">Πρόσθετο YouTube</summary>
+        <summary lang="en_GB">Plugin for YouTube</summary>
+        <summary lang="es_ES">Plugin para YouTube</summary>
+        <summary lang="es_MX">Complemento para YouTube</summary>
+        <summary lang="fi_FI">YouTube-lisäosa</summary>
+        <summary lang="fr_FR">Plugin pour YouTube</summary>
+        <summary lang="he_IL">תוסף עבור YouTube</summary>
+        <summary lang="hr_HR">Dodatak za YouTube</summary>
+        <summary lang="hu_HU">YouTube kiegészítő</summary>
+        <summary lang="id_ID">Pengaya untuk YouTube</summary>
+        <summary lang="it_IT">Plugin per YouTube</summary>
+        <summary lang="ko_KR">유튜브 플러그인</summary>
+        <summary lang="nb_NO">Tillegg for YouTube</summary>
+        <summary lang="nl_NL">Plugin voor YouTube</summary>
+        <summary lang="pl_PL">Wtyczka YouTube</summary>
+        <summary lang="ru_RU">Видеодополнение YouTube</summary>
+        <summary lang="sk_SK">Doplnok pre YouTube</summary>
+        <summary lang="tr_TR">YouTube için eklenti</summary>
+        <summary lang="vi_VN">Plugin dành cho YouTube</summary>
+        <summary lang="zh_CN">油管插件</summary>
+        <summary lang="zh_TW">YouTube附加元件</summary>
+        <description lang="bg_BG">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
+        <description lang="cs_CZ">YouTube je jedna z největších webových stránek světa sdílející video.</description>
+        <description lang="da_DK">YouTube er et af verdens største videodelingswebsteder.</description>
+        <description lang="de_DE">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
+        <description lang="el_GR">Το YouTube είναι μία από τις μεγαλύτερες ιστοσελίδες διαμοιρασμού βίντεο στον κόσμο.</description>
+        <description lang="en_GB">YouTube is one of the biggest video-sharing websites of the world.</description>
+        <description lang="es_ES">YouTube es uno de los sitios web más grande del mundo para compartir vídeos.</description>
+        <description lang="es_MX">YouTube es uno de los más grandes sitios web de intercambio de videos del mundo.</description>
+        <description lang="fi_FI">YouTube on yksi maailman suurimmista videoiden jakosivustoista.</description>
+        <description lang="fr_FR">YouTube est l&apos;un des plus grands sites de partage vidéos du monde.</description>
+        <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
+        <description lang="hr_HR">YouTube je jedna od najvećih stranica za dijeljenje video sadržaja na svijetu.</description>
+        <description lang="hu_HU">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
+        <description lang="id_ID">YouTube adalah salah satu situs web berbagi video terbesar di dunia.</description>
+        <description lang="it_IT">YouTube è uno dei più grandi siti di condivisione video del mondo.</description>
+        <description lang="ko_KR">유튜브는 세상에서 가장 큰 동영상 공유 사이트 중의 하나입니다.</description>
+        <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
+        <description lang="nl_NL">YouTube is een van de grootste videodelenwebsite in de hele wereld.</description>
+        <description lang="pl_PL">YouTube jest jednym z największych na świecie serwisów udostępniania wideo.</description>
+        <description lang="ru_RU">YouTube - популярнейший видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео.</description>
+        <description lang="sk_SK">YouTube je jednou z najväčších stránok na zdieľanie videa na svete.</description>
+        <description lang="tr_TR">YouTube, dünya üzerindeki en büyük video paylaşma platformlarından birisidir.</description>
+        <description lang="vi_VN">YouTube là một trong những trang web chia sẻ video lớn nhất trên thế giới.</description>
+        <description lang="zh_CN">油管是世界上最大的视频分享网站之一。</description>
+        <description lang="zh_TW">Youtube 是全世界最大的影片分享網站。</description>
+        <disclaimer lang="cs_CZ">Tento plugin není schválen společností Google</disclaimer>
+        <disclaimer lang="da_DK">Dette plugin er ikke godkendt af Google</disclaimer>
+        <disclaimer lang="de_DE">Dieses Plugin ist nicht von Google befürwortet</disclaimer>
+        <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
+        <disclaimer lang="en_GB">This plugin is not endorsed by Google</disclaimer>
+        <disclaimer lang="es_ES">Este add-on no está respaldado por Google</disclaimer>
+        <disclaimer lang="es_MX">Este complemento no está respaldado por Google</disclaimer>
+        <disclaimer lang="fi_FI">Google ei tue tätä lisäosaa</disclaimer>
+        <disclaimer lang="fr_FR">Ce module n&apos;est pas validé par Google</disclaimer>
+        <disclaimer lang="hr_HR">Ovaj dodatak nije podržan od strane Googlea</disclaimer>
+        <disclaimer lang="id_ID">Plugin ini tidak didukung oleh Google</disclaimer>
+        <disclaimer lang="it_IT">Questo plugin non è approvato da Google</disclaimer>
+        <disclaimer lang="ko_KR">이 플러그인은 Google의 허가를 받지 않았습니다</disclaimer>
+        <disclaimer lang="nl_NL">Deze plug-in wordt niet door Google ondersteund</disclaimer>
+        <disclaimer lang="pl_PL">Ta wtyczka nie jest zatwierdzona przez Google</disclaimer>
+        <disclaimer lang="ru_RU">Плагин не поддерживается Google</disclaimer>
+        <disclaimer lang="sk_SK">Tento doplnok nie je schválený spoločnosťou Google</disclaimer>
+        <disclaimer lang="tr_TR">Bu eklenti Google tarafından üretilmemiştir</disclaimer>
+        <disclaimer lang="vi_VN">Plugin này không được xác nhận bởi Google</disclaimer>
+        <disclaimer lang="zh_CN">此插件未被谷歌认可</disclaimer>
+        <disclaimer lang="zh_TW">此附加元件未由Google支持</disclaimer>
+    </extension>
+</addon>
+
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2023.2.30" provider-name="Slam, Diggz|HSK-FIX">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.future"/>
+        <import addon="script.module.mutagen"/>
+        <import addon="script.module.requests"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="playerMP3.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>A music streaming Collection.</summary>
+        <description>Diggz MP3 Streams Kodi 19 conversion by Slam</description>
+        <news>2021.0.4 - Fixed Settings, 2021.0.3 - Bugfixes. Enjoy!</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.duffyou" name="Duff You" version="0.2.1" provider-name="La Taberna">
+    <requires>
+        <import addon="script.module.six" version="1.11.0" />
+        <import addon="script.module.simplecache" />
+        <import addon="script.module.inputstreamhelper" version="0.5.0" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="libs/plugin.py">
+        <provides>video</provides>
+    </extension>
+	<extension point="xbmc.python.module" library="libs" />
+    <extension point="xbmc.addon.metadata">
+        <description>Hasta las narices de las apikeys de YouTube? Y de ver como calidad máxima los videos de la plataforma solo hasta 720p?[CR]Pues se acabó! Desde nuestra taberna os presentamos un nuevo addon de YouTube, donde no hace falta APIKEY alguna, ni tampoco hay ningún tipo de restricción para ver los videos a la máxima calidad ofrecida, 720p, 1080p, 2K y 4K![CR]Todo esto y mucho mas...</description>
+        <disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <license>[B]Este es un software gratuito[/B]</license>
+        <news>- Añadida opción de reproducción externa de playlists[CR]- Correcciones menores
+        </news>
     </extension>
 </addon>
 </addons>
