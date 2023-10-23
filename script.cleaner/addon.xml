@@ -1,0 +1,30 @@
+<addon id="script.cleaner" name="Cleaner" provider-name="KOVI" version="4.9">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <website></website>
+        <summary lang="de">Cleaner</summary>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum></forum>
+        <email></email>
+        <description lang="de">Matrix</description>
+        <news>v4.0 [CR]- Python 3 version [CR]</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart></fanart>
+            <screenshot></screenshot>
+            <screenshot></screenshot>
+            <screenshot></screenshot>
+            <banner></banner>
+            <logo></logo>
+        </assets>
+    </extension>
+</addon>
