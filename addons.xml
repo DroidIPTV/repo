@@ -805,7 +805,7 @@
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
-            <fanart></fanart>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
@@ -856,7 +856,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.xstream" name="xStream" version="4.0.7" provider-name="KOVI">
+<addon id="plugin.video.xstream" name="xStream" version="4.0.8" provider-name="KOVI">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests"/>
@@ -865,8 +865,6 @@
 		<import addon="repository.xstream" optional="true"/>
 		<import addon="repository.resolveurl" optional="true"/>
 		<import addon="script.module.inputstreamhelper" version="0.3.3" optional="true"/>
-		<import addon="script.module.web-pdb" version="1.5.6" optional="true"/>
-		<import addon="script.module.pydevd" optional="true" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -897,8 +895,6 @@
         <import addon="script.module.requests"/>
         <import addon="script.module.vavoo"/>
         <import addon="script.module.resolveurl" version="5.1.54"/>
-        <!-- for remote debug -->
-        <import addon="script.module.pydevd" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -937,15 +933,12 @@ Xship 2021.07.01
     </extension>
 </addon>
 
-<addon id="plugin.video.vavooto" name="VAVOO.TO" version="5.9.3.6" provider-name="KOVI">
+<addon id="plugin.video.vavooto" name="VAVOO Premium" version="5.9.3.6" provider-name="KOVI">
 	<requires>
 		<import addon="script.module.vavoo"/>
 		<import addon="script.module.requests"/>
 		<import addon="script.module.resolveurl"/>
-		<import addon="inputstream.ffmpegdirect" optional="true" />
-		<import addon="script.module.futures" optional="true" />
-		<!-- only for debug -->
-		<import addon="script.module.pydevd" optional="true"/>
+		<import addon="inputstream.ffmpegdirect" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="main.py">
 		<provides>video</provides>
@@ -968,8 +961,11 @@ provider-name="KOVI">
   <import addon="script.module.addon.signals" version="0.0.6" />
   <import addon="script.module.tmdbhelper" version="0.0.7" />
   <import addon="script.module.beautifulsoup4" version="4.9.3" />
-  <import addon="plugin.video.xstream" version="4.0.7"/>
-<import addon="plugin.video.vavooto" />
+  <import addon="plugin.video.vavooto" />
+  		<import addon="script.module.vavoo"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="inputstream.ffmpegdirect" />
+  <import addon="plugin.video.xstream" version="4.0.8"/>
 </requires>
 <extension point="xbmc.python.pluginsource" library="plugin.py">
   <provides>video</provides>
@@ -1293,8 +1289,6 @@ provider-name="KOVI">
         <import addon="script.module.six"/>
         <import addon="script.module.resolveurl"/>
         <import addon="plugin.video.xstream"/>
-        <!-- for remote debug -->
-        <import addon="script.module.pydevd" optional="true"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -1532,6 +1526,131 @@ provider-name="KOVI">
             <banner></banner>
             <logo></logo>
         </assets>
+    </extension>
+</addon>
+
+<addon id="skin.mimik" name="Skin Mimik" version="1.0.0" provider-name="KOVI">
+	<requires>
+		<import addon="xbmc.gui" version="5.15.0" />
+		<import addon="resource.images.studios.white" version="0.0.25" />
+		<import addon="script.skinshortcuts" version="1.1.4" />
+		<import addon="script.toolbox" version="2.0.0" />
+		<import addon="script.image.resource.select" version="3.0.2" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Mimik Skin</summary>
+		<description lang="en_GB">Mimik Skin für das Mediacenter KOVI/KODI/XBMC ab Version 19.1 (Matrix)</description>
+		<platform>all</platform>
+		<license>CC BY-NC-SA 4.0</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/droidiptv/skin.mimik/</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.png</fanart>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+
+<addon id="skin.kovi" version="1.0.0" name="Skin KOVI" provider-name="KOVI">
+	<requires>
+		<import addon="xbmc.gui" version="5.15.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
+		<!-- <res width="2560" height="1080" aspect="21:9" default="true" folder="xml" /> -->
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<!-- <res width="2560" height="1440" aspect="16:9" default="true" folder="xml" /> -->
+		<!-- <res width="1440" height="1080" aspect="4:3" default="true" folder="xml" /> -->
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="de">Standard Skin für KOVI.</summary>
+		<description lang="de">KOVI Team[CR]Design: KOVI Team Germany [CR]</description>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+		<news>[B]Improved[/B][CR]- improve window draw performance[CR]- rework home screen widget animation and heading/details behaviour[CR]- improve background overlay rendering[CR]- improve media flags spacing and positioning[CR]- improve rendering of all progress bar, scroll bar and slider controls[CR]- improve non-focus fanart behaviour[CR][CR][B]Fixed[/B][CR]- use proper localize for Player settings entry[CR]- fix default (non-skinshortcuts) home menu widget headings[CR]- fix seek slider mouse control</news>
+	</extension>
+</addon>
+
+<addon
+	id="skin.estuary" version="1.0.1" name="Skin Estuary" provider-name="KOVI">
+	<requires>
+		<import addon="xbmc.gui" version="5.15.0"/>
+		<import addon="script.skinshortcuts" version="1.1.4"/>
+		<import addon="resource.images.studios.white" version="0.0.28"/>
+
+
+	</requires>
+	<extension
+		point="xbmc.gui.skin" debugging="false" effectslowdown="1.0">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de">KOVI Estuary Skin</summary>
+
+		<description lang="de">Dies ist ein Skin Mod auf Basis des Unity Skins.[CR][CR]Support: [COLORcyan]https://t1p.de/paykovi[/COLOR][CR]Spende: [COLORcyan]https://t1p.de/koviml[/COLOR]</description>
+
+		<disclaimer lang="de">Wenn Sie diesen Skin verwenden oder anpassen möchten, fragen sie vorher bitte den Ersteller.</disclaimer>
+
+		<platform>all</platform>
+		<license></license>
+		<forum>https://t1p.de/kovi</forum>
+		<source></source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="skin.aenox" version="1.0.0" name="Aenox Skin" provider-name="KOVI">
+    <requires>
+        <import addon="xbmc.gui" version="5.15.0"/>
+        <import addon="script.skinshortcuts" version="1.0.17"/>
+        <import addon="script.skin.helper.colorpicker" version="1.0.13"/>
+        <import addon="script.image.resource.select" version="2.0.4"/>
+    </requires>
+    <extension point="xbmc.gui.skin" debugging="false">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de">Ein  minimalistisches Skin für KOVI Matrix 19.x</summary>
+        <description lang="de">Aenox Skin für das Mediacenter KOVI/KODI/XBMC/Wonderbox Zeichnet sich durch sein intuitives Menü und Schnelligkeit aus .</description>
+        <disclaimer lang="de">Aenox ist die  modifizierte Version von Aeon Aenox von Mike_Doc, schimi2k und MeowMoo. Es handelt sich um einen Skin, der auf dem Design von Aeon von djh_ und Aeon Nox 4 von BigNoid und phil65 basiert. Alle Dank geht an die Macher dieser Skins.</disclaimer>
+        <platform>all</platform>
+        <license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+        <forum></forum>
+        <source>https://github.com/droidiptv/skin.aenox</source>
+        <website>https://github.com/droidiptv/skin.aenox</website>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-06.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-07.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-08.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-09.jpg</screenshot>
+            <screenshot>resources/screenshots/screenshot-10.jpg</screenshot>
+        </assets>
+		<news>
+[B][COLOR=FF6DB9E5]v1.0.0[/COLOR][/B] - Release date: December 22, 2021[CR]
+[B][COLOR=FF6DB9E5]ADDITIONS[/COLOR][/B]
+• I added Canadian MPAA flags for Movies and TV Shows. Thanks to Juan Mortyme for the request and the info![CR]
+[B][COLOR=FF6DB9E5]FIXES[/COLOR][/B]
+• I updated the code for displaying the MPAA flags while playing a video.[CR]
+		</news>
     </extension>
 </addon>
 </addons>
