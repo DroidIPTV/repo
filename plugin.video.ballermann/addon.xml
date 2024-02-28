@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ballermann" name="[COLOR white]Ballermann[COLORlime]TV[/COLOR]" version="0.0.1" provider-name="[COLORdarkturquoise][B]KOVI[/B][/COLOR]">
+  <extension point="xbmc.python.pluginsource"
+			library="default.py">
+		<provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+	<summary lang="de">[COLOR white] Ballermann TV [/COLOR] </summary>
+	<language>en</language>
+	<description lang="de">[COLOR darkturquoise]Deutschsprachige Modifikation von FlechaNegra / ArrowNegra IPTV Addon [/COLOR]</description>
+	<platform>all</platform>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+	</assets>
+  </extension>
+</addon>
