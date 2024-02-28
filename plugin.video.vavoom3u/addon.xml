@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.vavoom3u"
+version="19.5.1"
+name="[COLORwhite]VAVOO[COLORcyan] M3U[/COLOR]"
+provider-name="[COLORdarkturquoise][B]KOVI[/B][/COLOR]">
+<requires>
+  <import addon="xbmc.python" version="3.0.0"/>
+  <import addon="script.module.requests" version="2.22.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="service.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="de">VAVOO Live TV</summary>
+ <description lang="de">[COLORwhite]VAVOO[COLORcyan] M3U[/COLOR] [COLORorange]Playlist aller verfugbarenügbaren Länder des VAVOO.TO Plugins![/COLOR]</description>
+    <disclaimer lang="de">Diese Modifikation bedient sich aus dem Aguia VAVOO Addon und erfordert dass VAVOO.TO Plugin. Es wurde jediglich an der Übersetzung gearbeitet. </disclaimer>
+  <assets>
+	<icon>icon.png</icon>
+	<fanart>fanart.jpg</fanart>
+  </assets>
+</extension>
+</addon>
