@@ -1070,7 +1070,7 @@ name="TheMovieDb Helper"
 provider-name="KOVI">
 <requires>
   <import addon="xbmc.python" version="3.0.0"/>
-  <import addon="script.module.requests" version="2.9.1"/>
+  <import addon="script.module.requests" minversion="2.9.1"/>
   <import addon="script.module.pil" version="1.1.7"/>
   <import addon="script.module.addon.signals" version="0.0.6" />
   <import addon="script.module.tmdbhelper" version="0.0.7" />
@@ -1095,7 +1095,7 @@ provider-name="KOVI">
   <forum></forum>
   <assets>
     <icon>icon.png</icon>
-    <fanart>fanart.jpg</fanart>
+    <fanart></fanart>
     <screenshot>resources/screenshot-01.jpg</screenshot>
     <screenshot>resources/screenshot-02.jpg</screenshot>
   </assets>
@@ -1242,27 +1242,31 @@ provider-name="KOVI">
   </extension>
 </addon>
 
-<addon id="plugin.video.daddylive" name="DaddyLive" version="3.0.2" provider-name="KOVI,dEXE,THE CREW, mbebe">
+<addon id="plugin.video.daddylive" name="Daddylive" version="4.02" provider-name="KOVI,THE CREW">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.inputstreamhelper"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
         <import addon="script.module.six"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">DaddyLiveHD - Live TV and Sports</summary>
-        <description lang="en">Live Streamed Channels and Scheduled Sporting Events.[CR][CR]Multiple sources/streams works in Matrix, Nexus and Omega.</description>
-        <disclaimer lang="en">daddylivehd.com</disclaimer>
-        <language>en</language>
+        <description lang="pl">1.2</description>
+        <disclaimer lang="pl">test
+        </disclaimer>
+        <summary lang="en">Live TV and Sports</summary>
+        <description lang="en">Live TV and Sports</description>
+        <disclaimer lang="en">test
+        </disclaimer>
+        <language>pl</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <website></website>
         <assets>
             <icon>icon.png</icon>
-            <fanart></fanart>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
@@ -1297,7 +1301,7 @@ provider-name="KOVI">
     <email>jmooremcc at hotmail.com</email>
     <assets>
       <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
+      <fanart></fanart>
     </assets>
 
     <news>
@@ -1414,7 +1418,7 @@ provider-name="KOVI">
     </extension>
 </addon>
 
-<addon id="script.module.vavoo" name="Vavoosign" version="0.2.3.1" provider-name="KOVI">
+<addon id="script.module.vavoo" name="Vavoosign" version="0.1.3.2" provider-name="KOVI,michaz1988">
 	<requires>
 		<import addon="script.module.requests"/>
 	</requires>
@@ -2304,7 +2308,7 @@ https://www.kinox.to</description>
 	</extension>
 </addon>
 
-<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2023.2.30" provider-name="Slam, Diggz|HSK-FIX">
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2023.2.30" provider-name="KOVI,Slam, Diggz|HSK-FIX">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.future"/>
@@ -2322,7 +2326,7 @@ https://www.kinox.to</description>
         <news>2021.0.4 - Fixed Settings, 2021.0.3 - Bugfixes. Enjoy!</news>
         <assets>
             <icon>icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
+            <fanart></fanart>
         </assets>
     </extension>
 </addon>
@@ -2659,7 +2663,7 @@ v.0.6.4 (2020-05-26):
 <addon id="script.module.metadatautils"
        name="Metadata and Artwork module"
        version="1.0.50"
-       provider-name="marcelveldt and others">
+       provider-name="KOVI,marcelveldt and others">
     <requires>
 		<import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.9.1"/>
@@ -2766,5 +2770,27 @@ v1.0.25 (marcelveldt)
 			<screenshot></screenshot>
 		</assets>
     </extension>
+</addon>
+
+<addon id="script.module.requests" name="requests" version="2.31.0" provider-name="KOVI,Python Software Foundation">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.certifi" version="2023.5.7"/>
+    <import addon="script.module.chardet" version="5.1.0"/>
+    <import addon="script.module.idna" version="3.4.0"/>
+    <import addon="script.module.urllib3" version="1.26.16+matrix.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Requests is an elegant and simple HTTP library for Python, built for human beings.</summary>
+    <description lang="en_GB">Requests is an elegant and simple HTTP library for Python, built for human beings.</description>
+    <license>Apache-2.0</license>
+    <platform>all</platform>
+    <website>https://requests.readthedocs.io/</website>
+    <source>https://github.com/psf/requests</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
 </addon>
 </addons>
