@@ -95,8 +95,8 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<description lang="en">Addons by Michaz</description>
-		<website>https://michaz1988.github.io</website>
+		<description lang="de">Addons für KOVI </description>
+		<website>https://droidiptv.github.io</website>
 		<assets>
 			<icon>icon.png</icon>
 		</assets> 
