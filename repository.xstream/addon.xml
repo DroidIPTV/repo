@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.xstream" name="xStream Repository" version="1.2.2" provider-name="xStream-Team">
+<addon id="repository.xstream" name="xStream Repository" version="1.2.3" provider-name="xStream-Team">
 	<extension point="xbmc.addon.repository" name="xStream Repository">
 		<dir minversion="18.9.701" maxversion="19.9.700">
             <info compressed="false">https://raw.githubusercontent.com/streamxstream/xStreamRepo/repo/matrix/addons.xml</info>
@@ -24,7 +24,7 @@
 		<description lang="de_GB">This is the official xStream repository.[CR]When a new xStream version is released, it is tested for functionality before being released. If you still encounter problems, please notify the official xStream team via Github or chat.</description>
 		<disclaimer lang="de_DE">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>
 		<disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream or the developers! For more information, see our Wiki and FaQ.</disclaimer>
-		<language>de en</language>
+		<language>de</language>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
 		<website>https://streamxstream.github.io/xStreamRepoWeb/</website>
