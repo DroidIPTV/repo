@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.stalker" name="Stalker TV" version="21.0" provider-name="Stalker Tv addon">
+<addon id="plugin.video.stalker" name="Stalker TV" version="21.3" provider-name="KOVI">
     <requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.25.1+matrix.1"/>
@@ -9,8 +9,8 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="de">[COLOR gold] LIVE-TV, VOD, SERIEN KODi Matrix NEXUS OMEGA[/COLOR]</summary>
-		<description lang="de"> Wir weisen darauf hin, dass illegale Addons im machen Ländern gegen geltendes Recht verstossen können und strafbar ist. Die Nutzung und Anwendung dieser Addons obliegt allein bei dem jeweiligen Benutzer des Addons...</description>
+		<summary lang="de_DE">Diverse IPTV Anbieter, 40 MAC Profile, schaue Live TV sowie Filme, Serien auf Abruf.</summary>
+		<description lang="de_DE"> Wir weisen darauf hin, dass illegale Addons im manchen Laendern gegen geltendes Recht verstossen koennen und strafbar ist. Die Nutzung und Anwendung dieser Addons obliegt allein bei dem jeweiligen Benutzer des Addons.</description>
 		<license></license>
 		<language></language>
 		<forum></forum>
@@ -18,7 +18,5 @@
             <icon>/resources/icons/icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-
-
 	</extension>
 </addon>
