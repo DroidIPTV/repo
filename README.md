@@ -1,3 +1,3 @@
-###  Repository für KOVI Omega 
-
-## beinhaltet deutschsprachige Repos, Plugins
+#  KOVI (Omega 21.3)
+## Repository 
+### für das Mediencenter KOVI, beinhaltet Video Plugins, Programm Addons, Repositories, Skripte, PVR Plugins 
