@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.kovi" name="KOVI Repository" provider-name="KOVI" version="1.0">
+<addon id="repository.kovi" name="KOVI Repository" provider-name="KOVI" version="1.1">
 	<extension point="xbmc.addon.repository" name="KOVI Repository">
 		<dir>
 			<info compressed="false">https://droidiptv.github.io/repo/addons.xml</info>
