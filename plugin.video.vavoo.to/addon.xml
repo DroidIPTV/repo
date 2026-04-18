@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.vavoo.to" name="VAVOO.TO" version="6.7.8" provider-name="KOVI">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="inputstream.adaptive" optional="true" /> 
+        <import addon="script.module.resolveurl" optional="true" />
+          <!--  <import addon="script.module.urlresolver" optional="true" /> -->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">VAVOO.TO Addon Mod</summary>
+		<description lang="de_DE">TV Live Streams</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license></license>
+		<forum></forum>
+		<website>https://vavoo.tt</website>
+		<email></email>
+		<mainsource>https://github.com/KOVI18/plugin.video.vavoo.to/</mainsource>
+		<source>https://vavoo.to</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 6.7.8  (16.11.2024)[/COLOR][/B]
+- fixed: Inputstream ffmpeg deaktiviert
+- fixed: Inputstream Adaptive integriert
+- fixed: Übersicht/Auswahl aller TV Länder 
+- fixed: manuelle Streamwiedergabe
+		</news>
+	</extension>
+</addon>
